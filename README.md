@@ -36,12 +36,26 @@ git clone https://github.com/ScanThe-Net/ScanTheNet-Go.git
 cd ScanTheNet-Go
 ```
 
-Usage
+Usage without build
 
 Run it from the command line. Optionally, you can specify the maximum number of entries:
 
 ```
 go run main.go [maxEntries]
+```
+
+Build
+
+```
+go build -o scanthenet main.go
+```
+
+Usage with build
+
+Run it from the command line. Optionally, you can specify the maximum number of entries:
+
+```
+./scanthenet [maxEntries]
 ```
 
 Replace [maxEntries] with a number between 1 and 100. If not specified, the default value is 100.
